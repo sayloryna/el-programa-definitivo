@@ -1,12 +1,12 @@
 const userName = "sayloryna";
-const password = "18Pamplinas";
-const repeatPassword = "18Pamplinas";
+const password = "18Íamplinas";
+const repeatPassword = "18amplinas";
 const userAge = "18";
 
 const isLargerThanFive = userName.length >= 5;
 const isLargerThanEight = password.length >= 8;
-const hasNumber = password.match(/[0-9]/) != null;
-const hasUpperLetter = password.match(/[A-Z]/) != null;
+const hasNumber = /[0-9]/.test(password);
+const hasUpperLetter = /([A-Z]|[À-Ü])/.test(password);
 const passwordIsValid = isLargerThanEight && hasNumber && hasUpperLetter;
 const isIdem = password === repeatPassword;
 const isAdult = userAge >= 18;
