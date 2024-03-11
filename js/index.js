@@ -1,6 +1,6 @@
 const userName = "sayloryna";
-const password = "18Íamplinas";
-const repeatPassword = "18amplinas";
+const password = "18pamplÍnas";
+const repeatPassword = "18pamplÍnas";
 const userAge = "18";
 
 const isLargerThanFive = userName.length >= 5;
