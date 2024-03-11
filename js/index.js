@@ -1,17 +1,18 @@
-const userName = "sayloryna";
+const username = "sayloryna";
 const password = "18pamplÍnas";
 const repeatPassword = "18pamplÍnas";
 const userAge = "18";
 
-const isLargerThanFive = userName.length >= 5;
-const isLargerThanEight = password.length >= 8;
-const hasNumber = /[0-9]/.test(password);
-const hasUpperLetter = /([A-Z]|[À-Ü])/.test(password);
-const passwordIsValid = isLargerThanEight && hasNumber && hasUpperLetter;
-const isIdem = password === repeatPassword;
+const isValidLengthUsername = username.length >= 5;
+const isValidLengthPassword = password.length >= 8;
+const hasNumberInPassword = /[0-9]/.test(password);
+const hasUpperLetterInPassword = /([A-Z]|[À-Ü])/.test(password);
+const isValidPassword =
+  isValidLengthPassword && hasNumberInPassword && hasUpperLetterInPassword;
+const isSamePassword = password === repeatPassword;
 const isAdult = userAge >= 18;
 
-console.log(`El nombre de usuario es válido: ${isLargerThanFive}`);
-console.log(`La contraseña es válida: ${passwordIsValid}`);
-console.log(`La repetición de la contraseña es válida: ${isIdem}`);
+console.log(`El nombre de usuario es válido: ${isValidLengthUsername}`);
+console.log(`La contraseña es válida: ${isValidPassword}`);
+console.log(`La repetición de la contraseña es válida: ${isSamePassword}`);
 console.log(`Es mayor de edad: ${isAdult}`);
